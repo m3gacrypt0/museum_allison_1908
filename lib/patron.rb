@@ -7,5 +7,9 @@ class Patron
     @spending_money = spending_money
     @interests = []
   end
+
+  def add_interest(interest)
+    @interests << interest
+  end
   
 end
