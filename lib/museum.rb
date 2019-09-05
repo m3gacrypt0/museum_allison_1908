@@ -34,7 +34,6 @@ class Museum
   #returns array of patrons
   def get_patrons_with_interest_in_exhibit(exhibit)
     @patrons.find_all do |patron|
-      # require 'pry'; binding.pry
       patron.interests.include?(exhibit.name)
     end
   end
